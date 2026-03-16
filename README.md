@@ -22,4 +22,4 @@ Server: C++ TCP server
 Database: MySQL
 
 ## Author
-Guo Jing
+Susan Guo
