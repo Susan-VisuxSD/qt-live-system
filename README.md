@@ -4,22 +4,35 @@ A live room system based on Qt, TCP and MySQL.
 
 ## Tech Stack
 - C++
-- Qt
+- Qt (Qt Widgets)
 - TCP Socket
+- JSON data communication
 - MySQL
-- JSON
 
 ## Features
-- User register and login
+- User registration and login
 - Create live room
 - Join / leave room
-- Live chat
-- Online user management
+- Online user list
+- Real-time chat
+- Live room start / end
+- Room list synchronization
 
-## Architecture
-Client: Qt GUI  
-Server: C++ TCP server  
-Database: MySQL
+The system uses a **Client–Server architecture**.
+
+Client (Qt GUI)
+- Login interface
+- Register interface
+- Room list interface
+- Live room interface
+
+Server (Qt TCP Server)
+- User management
+- Room management
+- Online user management
+- Message forwarding
+
+The client adopts a **central control design**, where all network messages are processed by the main controller and distributed to different UI modules.
 
 ## Author
 Susan Guo
