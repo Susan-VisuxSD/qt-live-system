@@ -18,6 +18,7 @@ A live room system based on Qt, TCP and MySQL.
 - Live room start / end
 - Room list synchronization
 
+## Architecture
 The system uses a **Client–Server architecture**.
 
 Client (Qt GUI)
